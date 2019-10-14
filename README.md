@@ -2,8 +2,8 @@
 
 # Ccache.cmake
 
-Ccache for CMake
-
+A simple Ccache integration for CMake.
+ 
 ## About
 
 Ccache.cmake makes it easy to use [_Ccache_](https://ccache.dev) inside a _CMake_ project.
@@ -55,4 +55,4 @@ add_subdirectory(Ccache.cmake)
 
 ## Dependencies
 
-_Ccache.cmake_ requires _CMake_ and _cache_.
+_Ccache.cmake_ requires _CMake_ and [_ccache_](https://ccache.dev).
