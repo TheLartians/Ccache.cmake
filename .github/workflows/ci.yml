@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  - push
+
+jobs:
+  build:
+
+    runs-on: macOS-10.14
+    
+    steps:
+    - uses: actions/checkout@v1
+
+    - name: Install ccache
+      run: brew install ccache
+
+    - name: Configure
+      run: cmake -Htest -Bbuild -DUSE_CCACHE=YES
+
+    - name: Build
+      run: "cmake --build build"
+
+    - name: Configure for XCode
+      run: cmake -Htest -Bbuildx -GXcode -DUSE_CCACHE=YES
+
+    - name: Build for XCode
+      run: "cmake --build buildx"
