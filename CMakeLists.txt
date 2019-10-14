@@ -33,6 +33,8 @@ if (USE_CCACHE)
       endif()
 
       message(STATUS "Using ccache: ${CCACHE_PROGRAM}")
+  else()
+      message(WARNING "Could not enable Ccache: could not find program")
   endif()
 
 endif()
