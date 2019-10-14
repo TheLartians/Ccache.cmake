@@ -10,8 +10,8 @@ if (USE_CCACHE)
 
   if(CCACHE_PROGRAM)
       # Set up wrapper scripts
-      set(C_LAUNCHER   "${CCACHE_PROGRAM}" CACHE INTERNAL "")
-      set(CXX_LAUNCHER "${CCACHE_PROGRAM}" CACHE INTERNAL "")
+      set(C_LAUNCHER   "${CCACHE_PROGRAM}")
+      set(CXX_LAUNCHER "${CCACHE_PROGRAM}")
       configure_file(launch-c.in   launch-c)
       configure_file(launch-cxx.in launch-cxx)
       execute_process(COMMAND chmod a+rx
