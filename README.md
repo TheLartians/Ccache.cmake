@@ -35,7 +35,7 @@ include(cmake/CPM.cmake)
 CPMAddPackage(
   NAME Ccache.cmake
   GITHUB_REPOSITORY TheLartians/Ccache.cmake
-  VERSION 1.0
+  VERSION 1.1
 )
 ```
 
