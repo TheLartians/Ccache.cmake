@@ -2,15 +2,12 @@
 
 # Ccache.cmake
 
-A simple Ccache integration for CMake.
+A simple _Ccache_ integration for _CMake_, based on [this](https://crascit.com/2016/04/09/using-ccache-with-cmake) article by Craig Scott.
  
 ## About
 
-Ccache.cmake makes it easy to use [_Ccache_](https://ccache.dev) inside a _CMake_ project.
-It adds an addition configuration option `USE_CCACHE` that, when enabled, configures CMake to compile sources using the ccache compiler cache.
-It is compatible with _Makefile_, _Ninja_ and _Xcode_ targets.
-
-After [integrating](#how-to-integrate) _Ccache.cmake_, you can configure your project to compile with _Ccache_ with the following command.
+[Ccache](https://ccache.dev) is a compiler cache that can drastically improve build times for C and C++ projects.
+This script makes it easy to configure a CMake project to use Ccache by adding the configuration option `USE_CCACHE` which will active Ccache support when enabled. It is currently compatible with _Makefile_, _Ninja_ and _Xcode_ targets. Example usage:
 
 ```bash
 cmake . -DUSE_CCACHE=YES
@@ -55,4 +52,4 @@ add_subdirectory(Ccache.cmake)
 
 ## Dependencies
 
-_Ccache.cmake_ requires _CMake_ and [_ccache_](https://ccache.dev).
+Ccache.cmake requires CMake and [_Ccache_](https://ccache.dev).
