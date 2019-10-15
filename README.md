@@ -7,7 +7,9 @@ A simple _Ccache_ integration for _CMake_, based on [this](https://crascit.com/2
 ## About
 
 [Ccache](https://ccache.dev) is a compiler cache that can drastically improve build times for C and C++ projects.
-This script makes it easy to configure a CMake project to use Ccache by adding the configuration option `USE_CCACHE` which will active Ccache support when enabled. It is currently compatible with _Makefile_, _Ninja_ and _Xcode_ targets. Example usage:
+This script makes it easy to configure a CMake project to use Ccache by adding the configuration option `USE_CCACHE` which will active Ccache support when enabled.
+It is currently compatible with _Makefile_, _Ninja_ and _Xcode_ generators.
+Example usage:
 
 ```bash
 cmake . -DUSE_CCACHE=YES
@@ -15,7 +17,7 @@ cmake . -DUSE_CCACHE=YES
 
 ## How to integrate
 
-### Using [CPM.cmake](https://github.com/TheLartians/CPM) (recomended)
+### Using [CPM.cmake](https://github.com/TheLartians/CPM) (recommended)
 
 Run the following from the project's root directory to add CPM to your project.
 
