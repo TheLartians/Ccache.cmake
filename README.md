@@ -8,11 +8,12 @@ A simple, Xcode compatible _Ccache_ integration for _CMake_, based on [this](htt
 
 [Ccache](https://ccache.dev) is a compiler cache that can drastically improve build times for C and C++ projects.
 This script makes it easy to configure a CMake project to use Ccache by adding the configuration option `USE_CCACHE` which will active Ccache support when enabled.
+Build-specific environmental variables can be set with the `CCACHE_OPTIONS` configuration parameter.
 It is currently compatible with _Makefile_, _Ninja_ and _Xcode_ generators.
 Example usage:
 
 ```bash
-cmake . -DUSE_CCACHE=YES
+cmake . -DUSE_CCACHE=YES -DCCACHE_OPTIONS="CCACHE_CPP2=true;CCACHE_SLOPPINESS=clang_index_store"
 ```
 
 ## How to integrate
