@@ -2,7 +2,7 @@
 
 # Ccache.cmake
 
-A simple _Ccache_ integration for _CMake_, based on [this](https://crascit.com/2016/04/09/using-ccache-with-cmake) article by Craig Scott.
+A simple, Xcode compatible _Ccache_ integration for _CMake_, based on [this](https://crascit.com/2016/04/09/using-ccache-with-cmake) article by Craig Scott.
  
 ## About
 
