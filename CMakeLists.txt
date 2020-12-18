@@ -19,8 +19,8 @@ if (USE_CCACHE)
             set(CCCACHE_EXPORTS "${CCCACHE_EXPORTS}\nexport ${option}")
         endforeach()
 
-        configure_file(launch-c.in   launch-c)
-        configure_file(launch-cxx.in launch-cxx)
+        configure_file(${CMAKE_CURRENT_LIST_DIR}/launch-c.in   launch-c)
+        configure_file(${CMAKE_CURRENT_LIST_DIR}/launch-cxx.in launch-cxx)
 
         execute_process(COMMAND chmod a+rx
                         "${CMAKE_CURRENT_BINARY_DIR}/launch-c"
