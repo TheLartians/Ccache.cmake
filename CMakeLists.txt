@@ -2,6 +2,11 @@
 
 cmake_minimum_required(VERSION 3.4)
 
+project(
+  CCache.cmake
+  LANGUAGES C CXX
+)
+
 option(USE_CCACHE "" OFF)
 set(CCACHE_OPTIONS "" CACHE STRING "options for ccache")
 
