@@ -32,11 +32,7 @@ Add the following lines to the project's `CMakeLists.txt` after calling `project
 ```CMake
 include(cmake/CPM.cmake)
 
-CPMAddPackage(
-  NAME Ccache.cmake
-  GITHUB_REPOSITORY TheLartians/Ccache.cmake
-  VERSION 1.2
-)
+CPMAddPackage("gh:TheLartians/Ccache.cmake@1.2.5")
 ```
 
 ### Using git submodules (not suited for libraries)
