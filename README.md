@@ -24,7 +24,7 @@ Run the following from the project's root directory to add CPM to your project.
 
 ```bash
 mkdir -p cmake
-wget -O cmake/CPM.cmake https://raw.githubusercontent.com/TheLartians/CPM/master/cmake/CPM.cmake
+wget -O cmake/CPM.cmake https://github.com/cpm-cmake/CPM.cmake/releases/latest/download/get_cpm.cmake
 ```
 
 Add the following lines to the project's `CMakeLists.txt` after calling `project(...)`.
